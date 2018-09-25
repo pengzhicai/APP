@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
@@ -14,6 +15,8 @@ public class MainActivity extends Activity implements NumberPicker.OnValueChange
     NumberPicker hourPicker;
     NumberPicker minutePicker;
     NumberPicker secondPicker;
+    Button timeStart;
+    Button timeStop;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +24,8 @@ public class MainActivity extends Activity implements NumberPicker.OnValueChange
         hourPicker = findViewById(R.id.hourpicker);
         minutePicker = findViewById(R.id.minuteicker);
         secondPicker = findViewById(R.id.secondteicker);
+        timeStart = findViewById(R.id.timeStart);
+        timeStop = findViewById(R.id.timeStart);
         init();
 
         // https://www.cnblogs.com/zyw-205520/p/4040923.html
@@ -35,7 +40,7 @@ public class MainActivity extends Activity implements NumberPicker.OnValueChange
         // AlarmManager.ELAPSED_REALTIME_WAKEUP，真实时间流逝闹钟，当闹钟发射时唤醒手机休眠；
 
         Intent intent =new Intent(this, Alarmreceiver.class);
-        intent.setAction("repeating");
+        intent.putExtra(Alarmreceiver.REPEAING_KEY, Alarmreceiver.REPEAING);
         PendingIntent sender = PendingIntent.getBroadcast(this, 0, intent, 0);
          //开始时间
         long firstime = SystemClock.elapsedRealtime();
@@ -43,9 +48,9 @@ public class MainActivity extends Activity implements NumberPicker.OnValueChange
         //5秒一个周期，不停的发送广播
         // am.setRepeating(AlarmManager.RTC_WAKEUP, firstime, 4*1000, sender);
         // 设置精确时间
-        // am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, 4*1000, sender);
+        am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, 4*1000, sender);
 
-        am.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,firstime, 4*1000, sender);
+        // am.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,firstime, 4*1000, sender);
         // am.cancel(sender);
     }
 

@@ -47,4 +47,28 @@
                 android:text="@string/second" />
     </LinearLayout>
 
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center_horizontal" >
+
+        <Button
+                android:id="@+id/timeStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/start" />
+
+
+        <Button
+                android:id="@+id/timeStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/stop" />
+
+    </LinearLayout>
+
 </LinearLayout>

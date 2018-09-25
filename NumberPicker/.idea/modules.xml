@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NumberPicker.iml" filepath="$PROJECT_DIR$/NumberPicker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file:///media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/NumberPicker/NumberPicker.iml" filepath="/media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/NumberPicker/NumberPicker.iml" />
+      <module fileurl="file:///media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/NumberPicker/app/app.iml" filepath="/media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/NumberPicker/app/app.iml" />
     </modules>
   </component>
 </project>

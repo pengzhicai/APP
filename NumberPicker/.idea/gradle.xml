@@ -7,10 +7,11 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="/media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/NumberPicker" />
+            <option value="/media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/NumberPicker/app" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

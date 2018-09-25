@@ -3,4 +3,6 @@
     <string name="hour">时</string>
     <string name="minu">分</string>
     <string name="second">秒</string>
+    <string name="start">开始</string>
+    <string name="stop">结束</string>
 </resources>
