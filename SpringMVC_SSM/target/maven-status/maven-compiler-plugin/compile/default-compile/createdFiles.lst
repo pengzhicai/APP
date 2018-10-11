@@ -1,0 +1,6 @@
+cn/pzc/entity/UserInfo.class
+cn/pzc/controller/testController.class
+cn/pzc/controller/UserInfoController.class
+cn/pzc/dao/IUserInfoDAO.class
+cn/pzc/service/IUserInfoService.class
+cn/pzc/service/UserInfoServiceImpl.class

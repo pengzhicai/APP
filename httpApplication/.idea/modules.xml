@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file:///media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/MyApplication/MyApplication.iml" filepath="/media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/MyApplication/MyApplication.iml" />
+      <module fileurl="file:///media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/MyApplication/app/app.iml" filepath="/media/mi/9eaf5fc7-55e5-4005-a86f-6a262079fa3a/tools/APP/MyApplication/app/app.iml" />
+    </modules>
+  </component>
+</project>
